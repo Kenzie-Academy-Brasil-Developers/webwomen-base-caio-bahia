@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/globalStyles.css">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/headerStyle.css">
+    <link rel="stylesheet" href="/styles/asideStyle.css">
+    <link rel="stylesheet" href="/styles/mainStyle.css">
+   <!-- Scripts -->
+    <script src="jobsData.js" defer></script>
+    <script src="index.js" defer></script>
+   
     <title>Webwomen</title>
     <meta
       name="description"
@@ -16,8 +25,40 @@
     />
 </head>
 <body>
-    <main></main>
-    <script src="jobsData.js"></script>
-    <script src="index.js"></script>
+  <header class="home-header bg-config-fixed">
+  
+    <div class="header-text">
+      <img class="header-webwomen-logo" src="/assets/img/logo.svg" alt="Webwomen logo">
+      <h3 id="header-subtitle">Lugar de mulher é onde ela quiser! </h3>
+      <p id="header-description_01">Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+        Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo? </p>
+        
+      <p id="header-description_02">Confere aqui embaixo o que temos pra você!</p>
+      <button class="header-call-button" type="" id="#">Ir para seção das vagas</button>
+    </div>
+  </header>
+    <main>
+      <section class="main-card-container">
+        <p class="text-vagas">Vagas</p>
+          <ul class="main-card-placement">
+            <li class="card">
+              <h2 class="card-title">pessoa desenvolvedora</h2>
+              <div class="card-smalls-container">
+                <small class="card-enterprise">Kenzie</small>
+                <small class="card-location">SSA</small>
+              </div>
+              <h3 class="card-job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque unde deleniti, error debitis aspernatur cupiditate quibusdam, aut quasi, corporis quisquam distinctio impedit dolores libero velit! Eum laudantium accusantium vel!</h3>
+            <div class="card-footer">
+              <p class="card-job-modality">home office</p>
+              <button class="card-apply-button">Candidatar</button>
+            </div>
+            </li>
+          </ul>
+      </section>
+      <aside>
+
+      </aside>
+    </main>
+  
 </body>
 </html>

@@ -1,0 +1,72 @@
+/* Background */
+header{
+    color: white  ;
+    font-family: 'Poppins';
+    font-style: normal; 
+}
+.home-header{
+   padding: 6.25rem 1rem ;
+   background: rgba(0,0,0,0.6) url(/assets/img/Header-bg.png);
+   position: relative;
+
+
+}
+.bg-config-fixed{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-blend-mode: darken;
+
+}
+
+/* Text+Logo */
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.header-webwomen-logo{
+    width: 193.31px;
+    height: 38px;
+    margin-bottom: 3.75rem;
+}
+#header-subtitle{
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+#header-description_01{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+#header-description_02{
+font-weight: bold;
+margin-bottom: 3.75rem;
+}
+.header-call-button{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 50px;
+gap: 10px;
+
+width: 300px;
+height: 48px;
+
+background: #6741D9;
+
+border: 2px solid #6741D9;
+border-radius: 8px;
+
+font-size: 1rem;
+font-weight: 500px;
+}
+
+.header-text > button{
+    align-items: center;
+}
