@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- StyleSheets -->
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/headerStyle.css">
-    <link rel="stylesheet" href="/styles/asideStyle.css">
-    <link rel="stylesheet" href="/styles/mainStyle.css">
-   <!-- Scripts -->
-    <script src="jobsData.js" defer></script>
-    <script src="index.js" defer></script>
-   
-    <title>Webwomen</title>
-    <meta
-      name="description"
-      content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- StyleSheets -->
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/globalStyles.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/headerStyle.css">
+  <link rel="stylesheet" href="/styles/asideStyle.css">
+  <link rel="stylesheet" href="/styles/mainStyle.css">
+  <!-- Scripts -->
+  <script src="/scripts/jobsData.js" defer></script>
+  <script src="/scripts/index.js" defer></script>
+  <script src="/scripts/Cards.js" defer></script>
+  <script src="/scripts/Favorite.js" defer></script>
+
+  <title>Webwomen</title>
+  <meta name="description" content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
       Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil 
-      e ao redor do mundo?"
-    />
+      e ao redor do mundo?" />
 </head>
+
 <body>
   <header class="home-header bg-config-fixed">
-  
+
     <div class="header-text">
       <img class="header-webwomen-logo" src="/assets/img/logo.svg" alt="Webwomen logo">
       <h3 id="header-subtitle">Lugar de mulher é onde ela quiser! </h3>
-      <p id="header-description_01">Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+      <p id="header-description_01">Está procurando oportunidades de estágio, emprego ou bolsas de estudo?
         Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo? </p>
-        
+
       <p id="header-description_02">Confere aqui embaixo o que temos pra você!</p>
-      <button class="header-call-button" type="" id="#">Ir para seção das vagas</button>
+      <div class="header-button_container">
+        <button class="header-call-button" type="" id="#">Ir para seção das vagas</button>
+      </div>
     </div>
   </header>
-    <main>
-      <section class="main-card-container">
-        <p class="text-vagas">Vagas</p>
-          <ul class="main-card-placement">
-            <li class="card">
-              <h2 class="card-title">pessoa desenvolvedora</h2>
-              <div class="card-smalls-container">
-                <small class="card-enterprise">Kenzie</small>
-                <small class="card-location">SSA</small>
-              </div>
-              <h3 class="card-job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque unde deleniti, error debitis aspernatur cupiditate quibusdam, aut quasi, corporis quisquam distinctio impedit dolores libero velit! Eum laudantium accusantium vel!</h3>
-            <div class="card-footer">
+  <main>
+    <section class="main-card-container">
+      <p class="text-vagas">Vagas</p>
+      <ul class="main-card-placement">
+        <!-- <li class="card">
+          <h2 class="card-title">pessoa desenvolvedora</h2>
+          <div class="card-smalls-container">
+            <small class="card-enterprise">Kenzie</small>
+            <small class="card-location">Curitiba</small>
+          </div>
+          <h3 class="card-job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque unde
+            deleniti, error debitis aspernatur cupiditate quibusdam, aut quasi, corporis quisquam distinctio impedit
+            dolores libero velit! Eum laudantium accusantium vel!</h3>
+          <div class="card-footer">
+            <div class="card-modality-container">
               <p class="card-job-modality">home office</p>
-              <button class="card-apply-button">Candidatar</button>
+              <p class="card-job-modality">Presencial</p>
             </div>
-            </li>
-          </ul>
-      </section>
-      <aside>
 
-      </aside>
-    </main>
-  
+            <button class="card-apply-button">Candidatar</button>
+          </div>
+        </li> -->
+      </ul>
+    </section>
+    <aside>
+      <h3 class="aside-title">Vagas Selecionadas</h3>
+
+      <p class="aside-notification"> Voce ainda não selecionou nenhuma vaga!</p>
+
+      <ul class="aside-job-selected-list">
+        <li class="job-select-card">
+          <div class="aside-information-container">
+            <h2 class="aside-information-title">Pessoa desenvolvedora</h2>
+            <div class="aside-information-smalls-container">
+              <small class="aside-card-enterprise">Kenzie Academy</small>
+              <small class="aside-card-local"> Rio de Janeiro </small>
+            </div>
+
+
+          </div>
+          <div class="aside-delete-button">
+            <img src="/assets/img/delete.png" alt="delete button">
+          </div>
+        </li>
+      </ul>
+
+    </aside>
+  </main>
+
 </body>
+
 </html>
