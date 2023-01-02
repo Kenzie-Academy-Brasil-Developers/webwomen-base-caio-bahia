@@ -102,3 +102,11 @@ main {
   flex-direction: row;
   gap: 16px;
 }
+
+.defaut-btn-state::before {
+  content: "Candidatar";
+}
+
+.not-defaut-btn-state::before {
+  content: "Remover Candidatura";
+}

@@ -42,7 +42,7 @@ aside {
   justify-content: center;
   width: 44px;
   height: 38px;
-  background: #f1f3f5;
+  background-color: #f1f3f5;
   border: 2px solid #f1f3f5;
   border-radius: 8px;
 }
@@ -51,13 +51,13 @@ aside {
   background-color: red;
 }
 
-.aside-delete-button > img {
+.aside-delete-button > span > img {
   width: 12.25px;
 }
 
 .aside-information-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 150%;
   color: #212529;
 }
@@ -71,6 +71,6 @@ aside {
 
 .aside-information-smalls-container > small {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
 }

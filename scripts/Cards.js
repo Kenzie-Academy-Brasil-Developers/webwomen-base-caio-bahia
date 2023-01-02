@@ -48,8 +48,13 @@ function CreateCard(object) {
 
   const buttonJobApply = document.createElement("button");
   buttonJobApply.classList.add("card-apply-button");
+  buttonJobApply.innerText = "Candidatar";
   buttonJobApply.id = object.id;
 
+  buttonJobApply.addEventListener("click", () => {
+    addToAside(object);
+    console.log(object);
+  });
   divCardModalityContainer.append(pJobModality01, pJobModality02);
   divCardFooter.append(divCardModalityContainer, buttonJobApply);
   divSmallsContainer.append(smallEnterprise, smallLocal);
@@ -59,3 +64,5 @@ function CreateCard(object) {
 }
 
 RenderCards();
+
+function favoriteClose(card, button) {}
