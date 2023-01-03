@@ -103,10 +103,25 @@ main {
   gap: 16px;
 }
 
-.defaut-btn-state::before {
-  content: "Candidatar";
-}
+@media (min-width: 768px) {
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card {
+    min-width: 600px;
+    max-width: 818px;
+    width: 60%;
+    height: 300px;
+  }
+  .card-apply-button {
+    width: 94px;
+  }
 
-.not-defaut-btn-state::before {
-  content: "Remover Candidatura";
+  main {
+    display: flex;
+    flex-direction: row;
+  }
 }

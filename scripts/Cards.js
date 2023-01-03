@@ -64,5 +64,3 @@ function CreateCard(object) {
 }
 
 RenderCards();
-
-function favoriteClose(card, button) {}
